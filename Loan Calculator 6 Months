@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner((System.in));
+        System.out.print("Loan amount: ");
+        int amount = scanner.nextInt();
+        //System.out.println("Loan amount after six month: "+ (amount*60)/100);
+        int rem,tenPercentAmount;
+        for (int x = 1; x<=6 ; x++){
+            System.out.println("Month "+x);
+            tenPercentAmount = (amount*10)/100;
+            rem = amount - tenPercentAmount;
+            System.out.println("Payment: 10% of "+ amount+" = "+ rem);
+            amount = rem;
+            System.out.println("Remaining amount: "+amount);
+
+
+        }
+    }
+}
