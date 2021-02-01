@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        // Distance Input
+        System.out.print("Enter the driving distance: ");
+        double distance = input.nextDouble();
+        
+        // input miles per Gallons
+        System.out.print("Enter miles per gallon: ");
+        double milesPerGallon = input.nextDouble();
+        
+        //Enter Price of one Gallon
+        System.out.print("Enter price per gallon: ");
+        double pricePerGallon = input.nextDouble();
+        
+        // Calculating Distance per Gallon
+        double ditance_travelled_perGallon = distance / milesPerGallon;
+        
+        // Cost Calculation
+        double costCalulations =  ditance_travelled_perGallon * pricePerGallon;
+        System.out.println("The cost of driving is $"+costCalulations);
+    }
+}
