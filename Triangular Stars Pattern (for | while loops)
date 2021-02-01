@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Number: ");
+        int num = scanner.nextInt();
+        int i = 1;
+        //While Loop Stars Printing
+        while (i<=num){
+            int j = num;
+            while(j>=i) {
+                System.out.print(" * ");
+                j--;
+            }
+            System.out.println();
+            i++;
+        }
+        //For LOOP Stars Pattern 
+        System.out.print("\nNumber: ");
+        int lum = scanner.nextInt();
+        for (int k = lum; k >= 0; k--) {
+            for (int n = k; n > 0 ; n--)
+                System.out.print(" * ");
+            System.out.println();
+
+        }
+    }
+}
