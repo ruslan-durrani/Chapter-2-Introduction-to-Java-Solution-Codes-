@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Practice {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Prompt the user to enter balance and interest rate points
+        System.out.print("Enter balance and interest rate (e.g., 3 for 3%): ");
+        double balance = input.nextDouble();
+        double annualInterestRate = input.nextDouble();
+        //formulae for interest calculation
+        double interest = balance * (annualInterestRate/1200);
+        //diplaying the interest
+        System.out.println("Interest is : "+interest);
+    }
+}
