@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("GMT offset: ");//-7 Pakistan
+        int offset  = input.nextInt();
+        double milis = System.currentTimeMillis();
+        double secs = milis / 1000;
+        double current_secs = secs % 60;
+        double minutes = secs /60;
+        double remaning_minute = minutes % 60;
+        double hours = minutes / 60;
+        double current_hour = hours % 24;
+        double time_offset  = current_hour + offset;
+        System.out.format("\n%d : %d : %d",(int)time_offset,(int)remaning_minute,(int)current_secs);
+    }
+}
