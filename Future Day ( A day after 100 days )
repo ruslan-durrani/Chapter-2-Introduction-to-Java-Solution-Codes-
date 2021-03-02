@@ -1,0 +1,27 @@
+package russi;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        //Input Process
+        Scanner input  = new Scanner (System.in);
+        
+        //Displaying Days
+        System.out.print("\n1: Monday\n2: Tuesday\n3: Wednesday\n" +
+                "4: Thursday\n5: Friday\n6: Saturday\n7: Sunday \nEnter Day by number:");
+        //Taking input
+        int day = input.nextInt();
+        
+        //Future Input
+        System.out.print("Enter Future Day: 1-7 ");
+        int future = input.nextInt();
+        
+        //Displaying Future Day
+        int futureDay = ( day + future ) % 7 ;
+        
+        //Display
+        System.out.println("The Future Day is: "+ futureDay);
+    }
+}
